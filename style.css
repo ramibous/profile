@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  background-image: url('https://images.freeimages.com/images/large-previews/d92/enchanted-forest-1191723.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Add this line to ensure the background covers the entire page */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card,
+.link-box {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.btn {
+  padding: 20px 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list-inline > li:last-child {
+  margin-right: 0;
+}
+
+.list-inline img {
+  width: 50px; /* Set all images to the same width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.list-inline img:hover {
+  transform: translateY(-5px); /* Move image up 5px on hover */
+}
